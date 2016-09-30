@@ -24,8 +24,9 @@
       var imageElement = '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
       htmlElement = $(chartDiv);
 
-      $(element).append(htmlElement);
         $(element).append(imageElement);
+      $(element).append(htmlElement);
+
     }
 
     this.onSettingsChanged = function (newSettings) {
