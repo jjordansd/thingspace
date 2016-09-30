@@ -18,7 +18,8 @@
       $(element).append('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" />');      
 
       //add the chart div to the dom
-      var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;"></div>';
+      var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;">' +
+          '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
       console.log(chartDiv);
       htmlElement = $(chartDiv);
       $(element).append(htmlElement);
