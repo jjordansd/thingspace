@@ -21,9 +21,11 @@
       var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;">'
 
       console.log(chartDiv);
-      htmlElement = '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
-      htmlElement.append(chartDiv);
+      var imageElement = '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
+      htmlElement = $(chartDiv);
+
       $(element).append(htmlElement);
+        $(element).append(imageElement);
     }
 
     this.onSettingsChanged = function (newSettings) {
