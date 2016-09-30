@@ -18,10 +18,11 @@
       $(element).append('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.8/jquery.jqplot.min.css" />');      
 
       //add the chart div to the dom
-      var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;">' +
-          '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
+      var chartDiv = '<div id="' + currentSettings.id + '" style="height:' + currentSettings.chartHeight + 'px;width:' + currentSettings.chartWidth + 'px;">'
+
       console.log(chartDiv);
-      htmlElement = $(chartDiv);
+      htmlElement = '<img src="https://jjordansd.github.io/thingspace/images/blue-car.png" </img></div>';
+      htmlElement.append(chartDiv);
       $(element).append(htmlElement);
     }
 
