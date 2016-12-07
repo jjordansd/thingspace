@@ -20,28 +20,28 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                 "path": "http://www.amcharts.com/lib/3/",
                   "axes": [ {
                     "axisThickness": 1,
-                    "axisAlpha": 0.002,
-                    "tickAlpha": 0.002,
-                    "valueInterval": 2,
+                    "axisAlpha": 0.2,
+                    "tickAlpha": 0.2,
+                    "valueInterval": 20,
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
-                      "endValue": 0.002,
+                      "endValue": 90,
                       "startValue": 0
                     }, {
                       "color": "#fdd400",
                       "innerRadius": "98%",
-                      "endValue": 0.007,
-                      "startValue": 0.03
+                      "endValue": 130,
+                      "startValue": 90
                     }, {
                       "color": "#cc4748",
-                      "endValue": 111,
+                      "endValue": 220,
                       "innerRadius": "98%",
-                      "startValue": 0.28
+                      "startValue": 130
                     } ],
-                    "bottomText": "11 km/h",
-                    "bottomTextYOffset": -0.2,
-                    "endValue": 0.5
+                    "bottomText": "0 km/h",
+                    "bottomTextYOffset": -20,
+                    "endValue": 220
                   } ],
                     "arrows": [ {
                         "innerRadius": "3%",			
@@ -56,7 +56,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
             setTimeout(function(){
                 freeboard.showLoadingIndicator(false);
                 speedgaugeElement.find("a").css("display","none");
-                titleElement.html("Alcohol Level");
+                titleElement.html("Vehicle Speed");
             },10000);
             
         }
@@ -71,13 +71,12 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
         }
         this.onCalculatedValueChanged = function(settingName, newValue)
 		{
-			var alcoholLevel = newValue/3750;
 		    if (gaugeChart) {
 		        if ( gaugeChart.arrows ) {
                     if ( gaugeChart.arrows[ 0 ] ) {
                         if ( gaugeChart.arrows[ 0 ].setValue ) {
-                            gaugeChart.arrows[ 0 ].setValue( alcoholLevel );
-                            gaugeChart.axes[ 0 ].setBottomText( alcoholLevel + " points" );
+                            gaugeChart.arrows[ 0 ].setValue( newValue );
+                            gaugeChart.axes[ 0 ].setBottomText( newValue + " MPH" );
                         }
                     }
                 }
