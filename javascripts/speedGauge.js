@@ -41,7 +41,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     } ],
                     "bottomText": "11 km/h",
                     "bottomTextYOffset": -0.2,
-                    "endValue": 1
+                    "endValue": 0.5
                   } ],
                     "arrows": [ {
                         "innerRadius": "3%",			
@@ -71,7 +71,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
         }
         this.onCalculatedValueChanged = function(settingName, newValue)
 		{
-			var alcoholLevel = newValue/6750;
+			var alcoholLevel = newValue/3750;
 		    if (gaugeChart) {
 		        if ( gaugeChart.arrows ) {
                     if ( gaugeChart.arrows[ 0 ] ) {
