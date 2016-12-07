@@ -22,7 +22,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     "axisThickness": 1,
                     "axisAlpha": 0.2,
                     "tickAlpha": 0.2,
-                    "valueInterval": 8000,
+                    "valueInterval": 2,
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
@@ -39,7 +39,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                       "innerRadius": "98%",
                       "startValue": 0.08
                     } ],
-                    "bottomText": "0 km/h",
+                    "bottomText": "11 km/h",
                     "bottomTextYOffset": -0.2,
                     "endValue": 10
                   } ],
