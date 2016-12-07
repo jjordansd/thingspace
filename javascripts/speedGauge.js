@@ -22,7 +22,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     "axisThickness": 1,
                     "axisAlpha": 0.2,
                     "tickAlpha": 0.2,
-                    "valueInterval": 0.002,
+                    "valueInterval": 2,
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
