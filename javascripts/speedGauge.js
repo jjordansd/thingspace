@@ -26,22 +26,22 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
-                      "endValue": 90,
+                      "endValue": 0.02,
                       "startValue": 0
                     }, {
                       "color": "#fdd400",
                       "innerRadius": "98%",
-                      "endValue": 130,
-                      "startValue": 90
+                      "endValue": 0.07,
+                      "startValue": 0.03
                     }, {
                       "color": "#cc4748",
-                      "endValue": 220,
+                      "endValue": 0.5,
                       "innerRadius": "98%",
-                      "startValue": 130
+                      "startValue": 0.08
                     } ],
-                    "bottomText": "0 km/h",
+                    "bottomText": "0 points",
                     "bottomTextYOffset": -20,
-                    "endValue": 220
+                    "endValue": 0.5
                   } ],
                     "arrows": [ {
                         "innerRadius": "3%",			
@@ -56,7 +56,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
             setTimeout(function(){
                 freeboard.showLoadingIndicator(false);
                 speedgaugeElement.find("a").css("display","none");
-                titleElement.html("Vehicle Speed");
+                titleElement.html("alcohol level");
             },10000);
             
         }
