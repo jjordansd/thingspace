@@ -20,8 +20,8 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                 "path": "http://www.amcharts.com/lib/3/",
                   "axes": [ {
                     "axisThickness": 1,
-                    "axisAlpha": 0.2,
-                    "tickAlpha": 0.2,
+                    "axisAlpha": 0.002,
+                    "tickAlpha": 0.002,
                     "valueInterval": 2,
                     "bands": [ {
                       "color": "#84b761",
