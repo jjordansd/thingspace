@@ -72,7 +72,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
         this.onCalculatedValueChanged = function(settingName, newValue)
 		{
 			var alcoholLevel = newValue/3750; 
-			alcoholLevel.toFixed(2);
+			alcoholLevel = alcoholLevel.toFixed(2);
 		    if (gaugeChart) {
 		        if ( gaugeChart.arrows ) {
                     if ( gaugeChart.arrows[ 0 ] ) {
