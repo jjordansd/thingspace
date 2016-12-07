@@ -22,7 +22,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     "axisThickness": 1,
                     "axisAlpha": 0.2,
                     "tickAlpha": 0.2,
-                    "valueInterval": 0.01,
+                    "valueInterval": 1,
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
@@ -56,7 +56,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
             setTimeout(function(){
                 freeboard.showLoadingIndicator(false);
                 speedgaugeElement.find("a").css("display","none");
-                titleElement.html("alcohol level");
+                titleElement.html("a");
             },10000);
             
         }
@@ -76,7 +76,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     if ( gaugeChart.arrows[ 0 ] ) {
                         if ( gaugeChart.arrows[ 0 ].setValue ) {
                             gaugeChart.arrows[ 0 ].setValue( newValue );
-                            gaugeChart.axes[ 0 ].setBottomText( newValue + " units" );
+                            gaugeChart.axes[ 0 ].setBottomText( newValue + " MPH" );
                         }
                     }
                 }
