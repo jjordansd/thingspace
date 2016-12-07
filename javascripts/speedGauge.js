@@ -22,7 +22,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     "axisThickness": 1,
                     "axisAlpha": 0.2,
                     "tickAlpha": 0.2,
-                    "valueInterval": 20,
+                    "valueInterval": 0.01,
                     "bands": [ {
                       "color": "#84b761",
                       "innerRadius": "98%",
@@ -76,7 +76,7 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
                     if ( gaugeChart.arrows[ 0 ] ) {
                         if ( gaugeChart.arrows[ 0 ].setValue ) {
                             gaugeChart.arrows[ 0 ].setValue( newValue );
-                            gaugeChart.axes[ 0 ].setBottomText( newValue + " MPH" );
+                            gaugeChart.axes[ 0 ].setBottomText( newValue + " units" );
                         }
                     }
                 }
