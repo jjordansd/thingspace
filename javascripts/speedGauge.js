@@ -71,12 +71,13 @@ freeboard.addStyle('.speedgauge-widget-wrapper', "color:#0000000;width:75%;	heig
         }
         this.onCalculatedValueChanged = function(settingName, newValue)
 		{
+			var alcoholLevel = newValue/3750;
 		    if (gaugeChart) {
 		        if ( gaugeChart.arrows ) {
                     if ( gaugeChart.arrows[ 0 ] ) {
                         if ( gaugeChart.arrows[ 0 ].setValue ) {
-                            gaugeChart.arrows[ 0 ].setValue( newValue );
-                            gaugeChart.axes[ 0 ].setBottomText( newValue + " MPH" );
+                            gaugeChart.arrows[ 0 ].setValue( alcoholLevel );
+                            gaugeChart.axes[ 0 ].setBottomText( alcoholLevel + " level" );
                         }
                     }
                 }
